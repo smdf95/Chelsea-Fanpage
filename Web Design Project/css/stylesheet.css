@@ -146,6 +146,7 @@ table {
     margin: auto;
     font-size: small;
     box-shadow: 0 0  20px rgba(0, 0, 0, 0.15);
+    text-align: center;
 }
 
 .squadtable {
@@ -185,7 +186,7 @@ thead {
     background: linear-gradient(#002292, #0022FF);
     color: #FFFFFF;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .left1 {
@@ -376,4 +377,8 @@ p {
     height: 150px;
     padding-left: 40px;
     padding-top: 300px;
+}
+
+iframe {
+    border: none;
 }
