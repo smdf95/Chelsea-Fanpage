@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Chelsea Football Club Fanpage</title>
+        <title>Homepage</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/stylesheet.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -9,17 +9,17 @@
     </head>
     <body>
         <div class="banner">
-            <div class="navbar">
+            <nav>
                 <a href="index.html"><img class="logo" alt="logo" src="images/logo.jpg"></a>
-                <nav>
+                <div class="navbar">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="squad.html">Squad</a></li>
                         <li><a href="season.html">Season</a></li>
                         <li><a href="legends.html">Legends</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
         <div class="wrapper">
             <header>
@@ -27,31 +27,58 @@
             </header>
             <main>
                 <div>
-                    <h2>Welcome to the unofficial Chelsea F.C
-                        Fanpage</h2><br>
-                    <h3>About</h3>
-                    <p>This webpage was created for fans of
-                        Chelsea F.C. <br>
-                        Here you'll find the latest news on Chelsea's
-                        current season, transfer rumors, as well as
-                        reflections on past Chelsea teams and players.
-                        You will also find speculation about what the
-                        future of Chelsea may hold.
-                    </p>
+                    <h2 class="about">Welcome to the unofficial Chelsea F.C Fanpage</h2><br>
+                    <h3 class="about">Here's What You'll Find</h3>
+                    <div class="trio">
+                        <div class="squadtrio">
+                            <h3 class="centre"><a href="squad.html">Squad</a></h3>
+                            <p>Information and statistics on the current Chelsea Squad, as well as our opinions on the top performers this season.</p>
+                        </div>
+                        <div class="squadtrio">
+                            <h3 class="centre"><a href="season.html">Season</a></h3>
+                            <p>Results and fixtures from this season, detailed write ups on our season to date, and highlight videos of our best games of the season.</p>
+                        </div>
+                        <div class="squadtrio">
+                            <h3 class="centre"><a href="legends.html">Legends</a></h3>
+                            <p>Write ups on some of the best players to have played for Chelsea, and videos showcasing their quality.</p>
+                            </div>
+                    </div>
+                    <div class="about">
+                        <h3>About</h3>
+                        <p>This webpage was created for fans of
+                        Chelsea F.C, by fans of Chelsea F.C. <br>
+                        Here you'll find the latest news on Chelsea's current season, the squad, the stats, opinion pieces, and a look back at Chelsea's most influential players to have played for the blue's.<br><br>This site is a fan-made site and in no way reflects the views of the club. The content of this website is entirely the opinion of the creator.<br><br> If you would like to become a recipient of our weekly news letter, please sign up below.
+                        </p>
+                    </div>
+                    <div class="about">
+                        <h3>News Letter</h3>
+                        <p>Our weekly news letter is a great way to stay updated with the latest Chlesea news, rumors, and stories as they break. If you are interested in our weekly news letter, sign up here.</p>
+                        <form mehtod="get">
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </main>
-            <aside>
+            <aside class="news">
                 <h3>Latest News:</h3>
-                <br>
                 <div>
+                    <img src="images/poch.jpg" alt="Pochettino" height="100px">
+                    <h4>Pochettino favourite for Chelsea job as Nagglesmann drops out</h4>
+                    <p>Mauricio Pochettion has become the front-runner for the Chelsea job as Julian Nagglesmann decides to drop out. </p>
+                </div>
+                <div>
+                    <img src="images/loss.jpg" alt="Loss" height="100px">
                     <h4>Chelsea knocked out of the Champions League</h4>
+                    <p>Chelsea lost their second leg to Real Madrid 2-0, to lose 4-0 on aggregate. Lampard's blues bow out at the quarter-final of the Champions League. Likely the last they'll see of the Champions League for quite some time.</p>
                 </div>
                 <div>
                   <img src="images/footballclash.jpg" alt="TwoLegs" height="100px">
                     <h4>Chelsea face uphill battle in return leg to Real Madrid</h4>
-                    <p><small>Chelsea lost 2-0 away to Madrid in the first
-                        leg of the Champions League Quarter-Finals.
-                  </small></p>
+                    <p>Chelsea lost 2-0 away to Madrid in the first leg of the Champions League Quarter-Finals.</p>
                 </div>
             </aside>
             <footer>
