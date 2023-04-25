@@ -108,7 +108,7 @@ main {
     margin-left: 100px;
 }
 
-.split, .split2 {
+.split, .split2, .split3 {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -117,7 +117,7 @@ main {
     margin-left: 100px;
 }
 
-.split2 {
+.split2, .split3 {
     margin-right: 100px;
 }
 
@@ -461,7 +461,112 @@ main a {
     margin-bottom: 10px;
 }
 
-@media (max-width:700px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        'h h h' 
+        'm m m'
+        'a a a'
+        'f f f'; 
+    }
+
+    .wrapper2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        'h h h' 
+        'm m m'
+        'm m m'
+        'f f f'; 
+    }
+
+    .navbar {
+        font-size: 20px;
+    }
+
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    aside {
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .trio {
+        margin-left: 50px;
+    } 
+
+    .news {
+        display: block;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .news h3 {
+        margin-top: 50px;
+    }
+
+    .squadtable {
+        margin: auto;
+    }
+
+
+    .split2 {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+
+    .tableright1, .tableleft1, .tableright2 {
+        margin: 50px 10px 50px 10px;
+    }
+
+    .win, .loss, .draw {
+        white-space: nowrap;
+    }
+
+    .split2 iframe {
+        width: 350px;
+        height: 200px;
+    }
+
+    .left1::before, .left2::before, .right1::before {
+        content: none;
+    }
+
+    .split3 {
+        position: relative;
+        display: block;
+        margin-left: 50px;
+        margin-right: 50px;
+    }  
+    
+    .split3 iframe {
+        width: 350px;
+        height: 200px;
+    }
+
+    .videoright1, .videoleft1, .videoright2 {
+        padding: 50px 0 50px 150px;
+    }
+    
+    .social {
+        gap: 15px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
     .wrapper {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
@@ -506,11 +611,10 @@ main a {
     }
   
     aside {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 10px;
     }
 
-    .split, .split2 {
+    .split, .split2, .split3 {
         position: relative;
         display: block;
         margin-left: 0;
@@ -523,16 +627,14 @@ main a {
         margin-left: 20px;
     }
 
-    table {
-        margin-left: -15px;
+    .squadtable {
+        margin-left: 0px;
         margin-right: 5px;
         padding: 2px;
     }
 
     .split2 table {
-        margin-top: 20px;
-        margin-left: 50px;
-        
+        margin: auto;
     }
 
     .links {
@@ -570,13 +672,15 @@ main a {
         flex-direction: column;
     }
 
-    .split2 iframe {
+    .split2, .split3 iframe {
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
     .news {
         text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .news h3 {
@@ -586,4 +690,6 @@ main a {
     .right1 {
         margin-left: 20px;
     }
+
 }
+
